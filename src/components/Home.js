@@ -1,5 +1,5 @@
 import React from "react";
-import TextField from "./TextField";
+import logo from "../img/logo.png";
 
 const Home = () => {
   return (
@@ -12,8 +12,7 @@ const Home = () => {
         justifyContent: "center",
       }}
     >
-      <TextField texto="Pantalla de inicio" variante="h4"></TextField>
-
+      <img src={logo} alt="logo" />
     </div>
   );
 };
