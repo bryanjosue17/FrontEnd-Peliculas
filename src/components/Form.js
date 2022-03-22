@@ -50,17 +50,7 @@ const FormPeli = () => {
           </Grid>
           <Grid item lg={6} xs={12}>
             <InputField
-              id="autor"
-              name="autor"
-              onChange={handleChange}
-              variante="outlined"
-              texto="Autor"
-              value={detallePelicula?.autor || ""}
-            ></InputField>
-          </Grid>
-          <Grid item lg={6} xs={12}>
-            <InputField
-              maxLength={4}
+              onInput={(e) => (e.target.value = e.target.value.slice(0, 4))}
               type="number"
               id="anio"
               name="anio"
@@ -68,6 +58,16 @@ const FormPeli = () => {
               variante="outlined"
               texto="Año"
               value={detallePelicula?.anio || ""}
+            ></InputField>
+          </Grid>
+          <Grid item lg={6} xs={12}>
+            <InputField
+              id="autor"
+              name="autor"
+              onChange={handleChange}
+              variante="outlined"
+              texto="Autor"
+              value={detallePelicula?.autor || ""}
             ></InputField>
           </Grid>
         </Grid>

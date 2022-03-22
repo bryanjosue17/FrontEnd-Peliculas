@@ -6,8 +6,8 @@ const InputField = (props) => {
     <div style={{ margin: "3%" }}>
       <TextField
         type={props.type}
+        onInput={props.onInput}
         style={{ width: "100%" }}
-        inputProps = {{maxLength:4}}
         id={props.id}
         label={props.texto}
         variant={props.variante}
