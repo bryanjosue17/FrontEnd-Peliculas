@@ -17,9 +17,9 @@ export const createPelicula =
     try {
       const res = await PeliculaDataService.create({
         nombre,
-        autor,
         genero,
         anio,
+        autor,
         datetime,
       });
       dispatch({
