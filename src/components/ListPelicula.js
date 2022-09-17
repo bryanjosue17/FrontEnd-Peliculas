@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { fetchCatalogs } from "../services/urls";
+import { fetchData } from "../services/urls";
 import {
   retrieveDetail,
   retrieveGeneros,
@@ -28,8 +28,8 @@ const ListPelicula = () => {
   };
 
   useEffect(() => {
-    dispatch(retrievePeliculas(fetchCatalogs.fetchTrending(page), genero));
-    dispatch(retrieveGeneros(fetchCatalogs.fetchGenres));
+    dispatch(retrievePeliculas(fetchData.fetchMovies(page), genero));
+    dispatch(retrieveGeneros(fetchData.fetchGenres));
   }, [dispatch, genero, page]);
 
   const handleSelectChange = (e) => {
@@ -42,7 +42,7 @@ const ListPelicula = () => {
   };
 
   const handleOpen = (id) => {
-    dispatch(retrieveDetail(fetchCatalogs.fetchDetail(id)));
+    dispatch(retrieveDetail(fetchData.fetchDetail(id)));
     setOpen(true);
   };
   return (

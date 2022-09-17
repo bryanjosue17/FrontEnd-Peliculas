@@ -8,7 +8,8 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { fetchCatalogs } from "../services/urls";
+import { fetchData } from "../services/urls";
+
 const DialogComponent = (props) => {
   return (
     <div>
@@ -32,9 +33,7 @@ const DialogComponent = (props) => {
               <CardMedia
                 component="img"
                 height="300px"
-                image={fetchCatalogs.fetchImage(
-                  props.detallePelicula.poster_path
-                )}
+                image={fetchData.fetchImage(props.detallePelicula.poster_path)}
                 alt="image"
               />
               <CardContent>

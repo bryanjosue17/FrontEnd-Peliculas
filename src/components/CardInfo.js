@@ -5,7 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { fetchCatalogs } from "../services/urls";
+import { fetchData } from "../services/urls";
 
 const CardInfo = (props) => {
   return (
@@ -13,7 +13,7 @@ const CardInfo = (props) => {
       <CardMedia
         component="img"
         height="175px"
-        image={fetchCatalogs.fetchImage(props.item.backdrop_path)}
+        image={fetchData.fetchImage(props.item.backdrop_path)}
         alt="image"
       />
       <CardContent>
