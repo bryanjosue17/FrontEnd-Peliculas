@@ -1,10 +1,8 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import FormPeli from "./Form";
 import DeleteIcon from "@mui/icons-material/Delete";
@@ -30,9 +28,7 @@ export default function DialogForm({
         >
           <DialogTitle>Ingrese pelicula:</DialogTitle>
 
-          {tipo === "create" ? (
-            <></>
-          ) : (
+          {tipo !== "create" && (
             <IconButton style={{ marginRight: "1%" }} aria-label="delete">
               <DeleteIcon style={{ color: "red" }} onClick={handleDelete} />
             </IconButton>
