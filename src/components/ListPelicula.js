@@ -225,7 +225,7 @@ const ListPelicula = () => {
           <InputField
             variante="filled"
             type="text"
-            texto="Buscar por agencia"
+            texto="Buscar pelicula"
             value={searchPelicula}
             onChange={onChangeSearchPelicula}
           />

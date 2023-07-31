@@ -7,7 +7,7 @@ const Home = () => {
       style={{
         display: "flex",
         height: "100vh",
-        backgroundColor: "blue",
+        backgroundColor: "white",
         alignItems: "center",
         justifyContent: "center",
       }}
