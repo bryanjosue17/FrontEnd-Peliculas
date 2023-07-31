@@ -1,10 +1,7 @@
 import React from "react";
-import ButtonComponent from "./Button";
 import InputField from "./InputField";
-import TextField from "./TextField";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import { useToasts } from "react-toast-notifications";
 import { changeKeyPeliculas } from "../store/actions/peliculas.actions";
 import { useDispatch, useSelector } from "react-redux";
 

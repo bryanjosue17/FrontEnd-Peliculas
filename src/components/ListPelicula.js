@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import TextField from "./TextField";
 import Paper from "@mui/material/Paper";
 import { DataGrid } from "@mui/x-data-grid";
-import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
   cleanDetallePelicula,
@@ -21,7 +20,6 @@ import DialogForm from "./Dialog";
 import { useToasts } from "react-toast-notifications";
 import ButtonComponent from "./Button";
 import InputField from "./InputField";
-import { Grid } from "@mui/material";
 
 const ListPelicula = () => {
   const [tipo, setTipo] = React.useState("");
